@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Enter New Books"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="100dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:hint="Book title"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:hint="Author name"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:hint="Pages"
+        android:layout_marginLeft="50dp"/>
+    />
+    <Switch
+        android:id="@+id/switch_"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available?"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Add"
+        android:id="@+id/add"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Save All"
+        android:id="@+id/save"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+</LinearLayout>
